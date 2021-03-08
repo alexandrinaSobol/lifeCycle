@@ -1,0 +1,13 @@
+
+<app-child [text]="t1" (newItemEvent)="addItem($event)" [(userName)]="name"></app-child>
+<ul>
+    <li *ngFor="let item of items">{{item}}</li>
+</ul>
+<div>Numele ales: {{name}}</div>
+
+<button [routerLink]="['contact']">click</button>
+
+<!-- <input [(ngModel)]="t1">
+
+<app-child [text]="t1" (newItemEvent)="t1=$event"></app-child>
+<p>{{t1}}</p> -->

@@ -1,0 +1,11 @@
+
+<p>{{text}}</p>
+<label>Add an item: <input #newItem></label>
+<button (click)="addNewItem(newItem.value)">Add to parent's list</button>
+
+<input [ngModel]="userName" (ngModelChange)="onNameChange($event)"/>
+
+<!-- <input #newData (keyup)="0" [ngClass]="{'class2': true}">
+<p>{{newData.value}}</p> -->
+
+
